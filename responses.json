@@ -1,1 +1,5 @@
-
+[
+  { "text": "Temporary motivation detected.", "min": 0, "max": 40 },
+  { "text": "Some conviction present.", "min": 41, "max": 70 },
+  { "text": "Founder energy detected.", "min": 71, "max": 100 }
+]
