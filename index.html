@@ -1,56 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Northstar</title>
+  <title>Tiny AI Lie Detector</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
+  <h1>Tiny AI Lie Detector</h1>
+  <p class="subtitle">Are you serious or just motivated at 2am?</p>
 
-  <h1>Northstar</h1>
-  <p class="subtitle">live build dashboard</p>
+  <textarea id="input" placeholder="Type your goal here..."></textarea>
+  <button onclick="analyze()">Analyze</button>
 
-  <div class="stats">
-    <div class="card">
-      <h3>Projects</h3>
-      <p>14</p>
-    </div>
-    <div class="card">
-      <h3>Active</h3>
-      <p>3</p>
-    </div>
-    <div class="card">
-      <h3>This Week</h3>
-      <p>5 sessions</p>
-    </div>
-  </div>
-
-  <h2>Active Builds</h2>
-
-  <div class="project">
-    <span>Northstar</span>
-    <div class="bar"><div style="width:40%"></div></div>
-  </div>
-
-  <div class="project">
-    <span>ProductivityRoom</span>
-    <div class="bar"><div style="width:70%"></div></div>
-  </div>
-  <div class="project">
-    <span>Study Tracker</span>
-    <div class="bar"><div style="width:55%"></div></div>
-  </div>
-
-  <h2>Weekly Log</h2>
-
-  <textarea id="log"></textarea>
-  <button onclick="save()">Save Week</button>
-
-  <h2>AI Summary</h2>
-  <button onclick="generate()">Generate</button>
-  <p id="summary"></p>
-
+  <div id="result"></div>
 </div>
 
 <script src="script.js"></script>
