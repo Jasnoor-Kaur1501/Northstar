@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tiny AI Lie Detector</title>
+  <title>Northstar</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-  <h1>Tiny AI Lie Detector</h1>
-  <p class="subtitle">Are you serious or just motivated at 2am?</p>
+  <h1>Northstar</h1>
+  <p class="subtitle">Remove distractions. Focus forward.</p>
 
-  <textarea id="input" placeholder="Type your goal here..."></textarea>
-  <button onclick="analyze()">Analyze</button>
+  <input id="goal" placeholder="What is your main goal right now?">
 
-  <div id="result"></div>
+  <textarea id="distractions" placeholder="What is distracting you? (one per line)"></textarea>
+
+  <button onclick="focusMode()">Enter Focus Mode</button>
+  <button onclick="resetMode()">Reset</button>
+
+  <div id="focusView" class="hidden"></div>
 </div>
 
 <script src="script.js"></script>
