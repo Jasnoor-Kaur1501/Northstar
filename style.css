@@ -180,13 +180,23 @@ input:focus{
 select {
     width: 100%;
     padding: 12px;
+
     border-radius: 12px;
-    border: none;
-    background: #f9f9f9;
+
+    border: 1px solid var(--border);
+
+    background: white;
+
     font-size: 14px;
+
     cursor: pointer;
     outline: none;
-    color: var(--text);
+
+    transition: all .2s;
+}
+
+select:hover{
+    border-color: var(--accent);
 }
 
 .swap-icon {
